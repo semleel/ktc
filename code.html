@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kapar Trading Company | One-Stop Insurance &amp; Vehicle Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "secondary": "#566068",
+                        "surface-container-high": "#e7e8ef",
+                        "surface-variant": "#e2e2e9",
+                        "primary-fixed": "#d7e2ff",
+                        "on-secondary-container": "#5c666e",
+                        "on-background": "#191c21",
+                        "secondary-fixed": "#dae4ee",
+                        "surface-container-highest": "#e2e2e9",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f9f9ff",
+                        "on-tertiary-fixed-variant": "#7b2f00",
+                        "background": "#f9f9ff",
+                        "tertiary-fixed-dim": "#ffb694",
+                        "surface-dim": "#d9d9e1",
+                        "surface-container": "#ededf5",
+                        "outline-variant": "#c2c6d3",
+                        "primary-fixed-dim": "#abc7ff",
+                        "on-tertiary-container": "#ffa77e",
+                        "surface-container-low": "#f3f3fa",
+                        "on-primary-fixed": "#001b3f",
+                        "inverse-on-surface": "#f0f0f8",
+                        "tertiary-fixed": "#ffdbcc",
+                        "tertiary-container": "#833301",
+                        "secondary-fixed-dim": "#bec8d1",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#004a99",
+                        "on-surface": "#191c21",
+                        "inverse-surface": "#2e3036",
+                        "surface": "#f9f9ff",
+                        "on-primary-fixed-variant": "#00458f",
+                        "on-primary": "#ffffff",
+                        "outline": "#737783",
+                        "on-surface-variant": "#424751",
+                        "tertiary": "#5f2200",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#9bbdff",
+                        "primary": "#00346f",
+                        "on-tertiary-fixed": "#351000",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#abc7ff",
+                        "surface-tint": "#255dad",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#dae4ee",
+                        "on-secondary-fixed": "#131d24",
+                        "on-secondary-fixed-variant": "#3e4850"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "section-padding": "80px",
+                        "margin-mobile": "20px",
+                        "base": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": [
+                            "Manrope"
+                        ],
+                        "label-sm": [
+                            "Inter"
+                        ],
+                        "body-md": [
+                            "Inter"
+                        ],
+                        "headline-xl": [
+                            "Manrope"
+                        ],
+                        "body-lg": [
+                            "Inter"
+                        ],
+                        "headline-lg": [
+                            "Manrope"
+                        ]
+                    },
+                    "fontSize": {
+                        "headline-md": [
+                            "24px",
+                            {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "label-sm": [
+                            "14px",
+                            {
+                                "lineHeight": "1.4",
+                                "letterSpacing": "0.02em",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "body-md": [
+                            "16px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-xl": [
+                            "40px",
+                            {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-lg": [
+                            "32px",
+                            {
+                                "lineHeight": "1.25",
+                                "fontWeight": "600"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html { scroll-behavior: smooth; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased pt-20">
+<!-- TopNavBar (From JSON) -->
+<nav class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-gray-100 dark:border-gray-800 shadow-sm">
+<div class="flex justify-between items-center h-20 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Brand Logo -->
+<a class="text-xl font-bold tracking-tighter text-blue-900 dark:text-white" href="#">
+                Kapar Trading Company
+            </a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex space-x-8">
+<a class="font-manrope text-sm font-semibold tracking-tight text-gray-600 dark:text-gray-400 hover:text-blue-700 transition-colors hover:bg-blue-50/50 dark:hover:bg-blue-900/20 transition-all rounded px-3 py-2" href="#about">
+<span class="lang-en">About Us</span>
+<span class="lang-zh hidden">关于我们</span>
+</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-gray-600 dark:text-gray-400 hover:text-blue-700 transition-colors hover:bg-blue-50/50 dark:hover:bg-blue-900/20 transition-all rounded px-3 py-2" href="#services">
+<span class="lang-en">Services</span>
+<span class="lang-zh hidden">服务项目</span>
+</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-gray-600 dark:text-gray-400 hover:text-blue-700 transition-colors hover:bg-blue-50/50 dark:hover:bg-blue-900/20 transition-all rounded px-3 py-2" href="#contact">
+<span class="lang-en">Contact</span>
+<span class="lang-zh hidden">联系我们</span>
+</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center space-x-4">
+<button class="font-label-sm text-label-sm text-primary hover:bg-primary-fixed-dim px-3 py-2 rounded-DEFAULT transition-colors" onclick="toggleLanguage()">
+                    EN/中
+                </button>
+<!-- Mobile Menu Button -->
+<button class="md:hidden p-2 text-on-surface" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu Dropdown -->
+<div class="hidden absolute top-20 left-0 w-full bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 shadow-md flex-col px-6 py-4 space-y-4 z-40" id="mobile-menu">
+<a class="font-manrope text-sm font-semibold text-gray-600 dark:text-gray-400" href="#about" onclick="toggleMobileMenu()">
+<span class="lang-en">About Us</span>
+<span class="lang-zh hidden">关于我们</span>
+</a>
+<a class="font-manrope text-sm font-semibold text-gray-600 dark:text-gray-400" href="#services" onclick="toggleMobileMenu()">
+<span class="lang-en">Services</span>
+<span class="lang-zh hidden">服务项目</span>
+</a>
+<a class="font-manrope text-sm font-semibold text-gray-600 dark:text-gray-400" href="#contact" onclick="toggleMobileMenu()">
+<span class="lang-en">Contact</span>
+<span class="lang-zh hidden">联系我们</span>
+</a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-section-padding pb-section-padding flex items-center min-h-[819px] bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0uhNbaIRF3REJxBkr7jFK2tihneTlDYkx4tT2Ge9rHuDQvOscG4hprQvpYBx2yvKo5u0UJ1CEilda7LNYeRXQK1wwL0Jb1uoU_6AHcri_7KJ0gOuWoRytwtt8Q7bFD4cgbdLPast7LaXcfp190K7OKEseP5pUhudr0LTotiS72clg2A9lGkq18XamuI2f749iedSifzHtadXsmwRMcwqUhnOlxi-f5lILDlriyTArJHc4CTOMiHjSUOV1UUDHPLG4Vf8DAJPphssxg');">
+<div class="absolute inset-0 bg-gray-900/70"></div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-gutter w-full">
+<div class="max-w-2xl space-y-6">
+<span class="font-label-sm text-label-sm text-blue-300 uppercase tracking-wider block mb-2">
+<span class="lang-en">Welcome to</span>
+<span class="lang-zh hidden">欢迎来到</span>
+</span>
+<h1 class="font-headline-xl text-headline-xl text-white">
+                        Kapar Trading Company
+                    </h1>
+<p class="font-headline-md text-headline-md text-gray-200">
+<span class="lang-en">One-Stop Insurance &amp; Vehicle Services</span>
+<span class="lang-zh hidden">一站式保险与车辆服务</span>
+</p>
+<p class="font-body-lg text-body-lg text-gray-300 max-w-lg">
+<span class="lang-en">Over 20 years of trusted service in Kapar, providing reliable solutions for all your vehicle and insurance needs.</span>
+<span class="lang-zh hidden">在加埔（Kapar）提供超过20年的值得信赖的服务，为您所有的车辆和保险需求提供可靠的解决方案。</span>
+</p>
+<div class="pt-4">
+<a class="inline-flex items-center justify-center text-on-primary min-h-[56px] px-8 rounded-DEFAULT font-label-sm text-label-sm hover:bg-green-600 transition-colors shadow-md hover:shadow-lg" href="https://wa.me/60123289895?text=Hello,%20I%20would%20like%20to%20ask%20about%20your%20services." rel="noopener noreferrer" style="background-color: #25D366; color: white;" target="_blank">
+<span class="material-symbols-outlined mr-2">chat</span>
+<span class="lang-en">WhatsApp Us</span>
+<span class="lang-zh hidden">WhatsApp 联系我们</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Trusted Partners Section -->
+<section class="py-12 bg-surface-container-lowest border-b border-surface-container-high" id="partners">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-10">
+<span class="lang-en">Our Trusted Partners</span>
+<span class="lang-zh hidden">我们的合作伙伴</span>
+</h2>
+<div class="flex justify-center items-center gap-6 md:gap-24">
+<img alt="Generali" class="h-12 md:h-28 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ug89Vtw159FTRYE0Aar9mRo42gs-0iZAeIp6SCsNuhmu3oakJeTnrghV6iHB5_6UURDsxLSbGC-l2CTZZheijpQ-97pRRfwVUtu02QjH4PFp_N1hsqwwRG32NxAaTT0xbKZZivBfY2fCc5BCNNBCDFtK3rNv9jk4GBZ1irVaTl5lsDDpwMVl1ZAIH2oaA3U_n-_rsYyZqhhIT7-DHw3VnDQ0R6yl0ZjZIhAIKGlsMlRgz1StZmFo_BMWgIzBiqwuW5lM1uOSPywKQ"/>
+<img alt="Tokio Marine" class="h-12 md:h-28 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uinDU2fisDdSE0wTOa-V9SdNXBsJZnjJhdUBisrSC7htEAOq-hptv_0mnsEVDPNSiDLuhcIbFozS5N0pttoDLnZ0Dp7PdNUE73KkJDqIao4AOdrKS7qlJaAdg-BDZn-H98VbveI85t82qOfMXsnNU0Cd_2dG8ZgYi7mpeWTmVO3cZKTinkyuF5T_wuDbjyXFlC3HN6goeBAlOOXjn5pu0G42p1Ixge9yJ6rIFy31nohtTnR11sQtFiyAEDe6eT-l6z-3D6pklwUVw"/>
+<img alt="Berjaya Sompo" class="h-12 md:h-28 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujKIdz4UMi9uAoJWg67kooHNS9kxE0xj8J9UpTJaVG4Tp20J5TEgL0rOYekpb2dAlzJR-d3WunVrIChmzdKAQXnQhnXYivf_g0mDCykhigQnZ9IcEpiSpaTwSdT5h92O-q68JPAj0b0HwKVrGKlWoG6ASX7sg4tYaMiWbi_7TDQ-zmv3q5nDX9TJiNC6jRpTi92sFoD7vM4KifxZ1M9PtvmdFLOYlEwnIQknwj32HOCR2-AwD2j44H0QRVLol5yH8ZTyELbmsj51Q"/>
+</div>
+</div>
+</section>
+<!-- About Us -->
+<section class="py-section-padding bg-surface" id="about">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center max-w-3xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">
+<span class="lang-en">About Us</span>
+<span class="lang-zh hidden">关于我们</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+<span class="lang-en">Kapar Trading Company is a trusted agency in Malaysia with over 20 years of experience. We provide comprehensive solutions for motor insurance, road tax, PUSPAKOM inspection, and JPJ-related services.</span>
+<span class="lang-zh hidden">Kapar Trading Company 是马来西亚一家值得信赖的代理机构，拥有超过20年的经验。我们提供全面的汽车保险、路税、PUSPAKOM 验车以及 JPJ 相关服务。</span>
+</p>
+</div>
+</section>
+<!-- Services (Bento Grid) -->
+<section class="py-section-padding bg-surface-container-low" id="services">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">
+<span class="lang-en">Our Services</span>
+<span class="lang-zh hidden">我们的服务</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+<span class="lang-en">Comprehensive vehicle solutions under one roof.</span>
+<span class="lang-zh hidden">一站式全面的车辆解决方案。</span>
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-base">
+<!-- Service Card 1 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-surface-variant col-span-1 md:col-span-2 row-span-2 flex flex-col justify-center">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">directions_car</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">
+<span class="lang-en">Motor Insurance</span>
+<span class="lang-zh hidden">汽车保险</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+<span class="lang-en">Comprehensive coverage options from top providers.</span>
+<span class="lang-zh hidden">来自顶级供应商的全面保障选项。</span>
+</p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="bg-surface-container px-3 py-1 rounded-full font-label-sm text-label-sm text-secondary">Generali</span>
+<span class="bg-surface-container px-3 py-1 rounded-full font-label-sm text-label-sm text-secondary">Berjaya Sompo</span>
+<span class="bg-surface-container px-3 py-1 rounded-full font-label-sm text-label-sm text-secondary">Tokio Marine</span>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-surface-variant">
+<div class="w-10 h-10 bg-secondary-fixed rounded-full flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-lg">
+<span class="lang-en">Road Tax Renewal</span>
+<span class="lang-zh hidden">路税更新</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+<span class="lang-en">Fast and efficient processing.</span>
+<span class="lang-zh hidden">快速高效的处理。</span>
+</p>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-surface-variant">
+<div class="w-10 h-10 bg-secondary-fixed rounded-full flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined">fact_check</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-lg">
+<span class="lang-en">PUSPAKOM</span>
+<span class="lang-zh hidden">PUSPAKOM 验车</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+<span class="lang-en">Inspection for Lorry &amp; Commercial.</span>
+<span class="lang-zh hidden">货车与商用车辆检验。</span>
+</p>
+</div>
+<!-- Service Card 4 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-surface-variant">
+<div class="w-10 h-10 bg-secondary-fixed rounded-full flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-lg">
+<span class="lang-en">JPJ Services</span>
+<span class="lang-zh hidden">JPJ 服务</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+<span class="lang-en">Handling all related matters.</span>
+<span class="lang-zh hidden">处理所有相关事宜。</span>
+</p>
+</div>
+<!-- Service Card 5 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-surface-variant">
+<div class="w-10 h-10 bg-secondary-fixed rounded-full flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-lg">
+<span class="lang-en">Summons (Saman)</span>
+<span class="lang-zh hidden">交通罚单（Saman）</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+<span class="lang-en">Payment assistance.</span>
+<span class="lang-zh hidden">协助缴付。</span>
+</p>
+</div>
+<!-- Service Card 6 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-surface-variant">
+<div class="w-10 h-10 bg-secondary-fixed rounded-full flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined">id_card</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-lg">
+<span class="lang-en">Driving License</span>
+<span class="lang-zh hidden">驾驶执照</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+<span class="lang-en">Renewal services.</span>
+<span class="lang-zh hidden">更新服务。</span>
+</p>
+</div>
+<!-- Service Card 7 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-surface-variant">
+<div class="w-10 h-10 bg-secondary-fixed rounded-full flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined">swap_horiz</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-lg">
+<span class="lang-en">Ownership Transfer</span>
+<span class="lang-zh hidden">车辆过户</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+<span class="lang-en">Smooth processing.</span>
+<span class="lang-zh hidden">顺利办理。</span>
+</p>
+</div>
+<!-- Service Card 8: SSM Renewal -->
+<div class="bg-surface rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-surface-variant">
+<div class="w-10 h-10 bg-secondary-fixed rounded-full flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined">business_center</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-lg">
+<span class="lang-en">SSM Renewal</span>
+<span class="lang-zh hidden">SSM 更新</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+<span class="lang-en">Business registration renewal.</span>
+<span class="lang-zh hidden">商业注册更新。</span>
+</p>
+</div></div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid md:grid-cols-2 gap-gutter items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">
+<span class="lang-en">Why Choose Us</span>
+<span class="lang-zh hidden">为什么选择我们</span>
+</h2>
+<ul class="space-y-6">
+<li class="flex items-start">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary mt-1 mr-4 shrink-0">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-base text-on-surface">
+<span class="lang-en">20+ Years Experience</span>
+<span class="lang-zh hidden">20多年经验</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+<span class="lang-en">Decades of trusted service in the industry.</span>
+<span class="lang-zh hidden">业内数十年的信誉服务。</span>
+</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary mt-1 mr-4 shrink-0">
+<span class="material-symbols-outlined text-sm">bolt</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-base text-on-surface">
+<span class="lang-en">Fast Processing</span>
+<span class="lang-zh hidden">快速处理</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+<span class="lang-en">Quick turnaround times for your convenience.</span>
+<span class="lang-zh hidden">为您提供便捷的快速周转时间。</span>
+</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary mt-1 mr-4 shrink-0">
+<span class="material-symbols-outlined text-sm">sync</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-base text-on-surface">
+<span class="lang-en">Daily Handling</span>
+<span class="lang-zh hidden">每日处理</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+<span class="lang-en">Consistent interaction with JPJ &amp; PUSPAKOM.</span>
+<span class="lang-zh hidden">每日与 JPJ 和 PUSPAKOM 对接。</span>
+</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary mt-1 mr-4 shrink-0">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-base text-on-surface">
+<span class="lang-en">Reliable &amp; Hassle-free</span>
+<span class="lang-zh hidden">可靠无忧</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+<span class="lang-en">Peace of mind guaranteed.</span>
+<span class="lang-zh hidden">保证让您安心。</span>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="h-full min-h-[400px] bg-surface-variant rounded-xl border border-surface-container-high" data-alt="A professional business consultation scene in a minimalist, modern office setting. Two individuals are shaking hands across a clean desk, bathed in soft, natural daylight. The color palette emphasizes corporate trust with subtle shades of primary blue, crisp whites, and light grays. The mood is highly professional, efficient, and reliable, reflecting a high-end service experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqLF7OL7J5tMPJtnylhCtxCUEi-VwEIPU8ou2hvu3465fitM5QSCJdv-ZFofqf7ARSItAc-Yw5vEVr7jT0Btbaiu7zhh3MM8nBW9nSqav6lQn58O3psI5SoBVKjhcgdQzSlVlt_MbQGm6qvuNHFQkG0s1zXGC507FsUft71jFam9ZoONBmpVVy1A2LBQ2sVuR8SKFmjGREZYRxS7Uv3rRtqqmuuSGwBjurZU7EAOVuco9xLljB7t_OGnMjqEUrgCIjCKqVJTdTzzo'); background-size: cover; background-position: center;">
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-padding bg-surface-container-low border-t border-surface-container-high" id="contact">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid md:grid-cols-2 gap-12">
+<!-- Contact Info -->
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">
+<span class="lang-en">Contact Us</span>
+<span class="lang-zh hidden">联系我们</span>
+</h2>
+<div class="space-y-8">
+<div class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-4 mt-1">location_on</span>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface mb-1">
+<span class="lang-en">Address</span>
+<span class="lang-zh hidden">地址</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+<span class="lang-en">73, Lintang Dato Tahir 1, Pekan Kapar,<br/>42200 Kapar, Selangor</span>
+<span class="lang-zh hidden">73, Lintang Dato Tahir 1, Pekan Kapar,<br/>42200 Kapar, Selangor</span>
+</p>
+</div>
+</div>
+<div class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-4 mt-1">phone</span>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface mb-1">
+<span class="lang-en">Contact Numbers</span>
+<span class="lang-zh hidden">联系电话</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+<span class="lang-en">012-328 9895 (Ms. Lee)<br/>016-220 9802 (Ms. Ng)</span>
+<span class="lang-zh hidden">012-328 9895 (Ms. Lee)<br/>016-220 9802 (Ms. Ng)</span>
+</p>
+</div>
+</div>
+<div class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-4 mt-1">schedule</span>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface mb-1">
+<span class="lang-en">Working Hours</span>
+<span class="lang-zh hidden">营业时间</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+<span class="lang-en">Mon-Fri: 9:00 AM - 5:00 PM<br/>Sat: 9:00 AM - 1:00 PM<br/>Sun: Closed</span>
+<span class="lang-zh hidden">周一至周五: 上午 9:00 - 下午 5:00<br/>周六: 上午 9:00 - 下午 1:00<br/>周日: 休息</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Embed Placeholder -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm border border-surface-variant h-full min-h-[300px] relative"><iframe allowfullscreen="" class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.844123533649!2d101.37121657577546!3d3.1359146532585257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc530062a4f4d9%3A0x6d90f23d46f5c531!2s73%2C%20Lintang%20Dato%20Tahir%201%2C%20Pekan%20Kapar%2C%2042200%20Kapar%2C%20Selangor!5e0!3m2!1sen!2smy!4v1715850000000!5m2!1sen!2smy"></iframe></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (From JSON) -->
+<footer class="bg-gray-50 dark:bg-gray-950 w-full py-12 border-t border-gray-200 dark:border-gray-800 tonal-shift-bg flat no-shadows">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-12 max-w-7xl mx-auto text-center md:text-left">
+<!-- Brand & Copyright -->
+<div>
+<h3 class="text-lg font-bold text-blue-900 dark:text-white mb-4">Kapar Trading Company</h3>
+<p class="font-manrope text-xs text-gray-500 dark:text-gray-400">
+<span class="lang-en">© 2024 Kapar Trading Company. All Rights Reserved.</span>
+<span class="lang-zh hidden">© 2024 Kapar Trading Company. 版权所有。</span>
+</p>
+</div>
+<!-- Links -->
+<div class="md:col-span-2 flex flex-col md:flex-row md:justify-end gap-4 md:gap-8">
+<a class="font-manrope text-xs text-gray-500 dark:text-gray-400 text-gray-500 hover:text-blue-600 hover:underline decoration-blue-500 underline-offset-4 transition-opacity duration-300" href="#">
+<span class="lang-en">Privacy Policy</span>
+<span class="lang-zh hidden">隐私政策</span>
+</a>
+<a class="font-manrope text-xs text-gray-500 dark:text-gray-400 text-gray-500 hover:text-blue-600 hover:underline decoration-blue-500 underline-offset-4 transition-opacity duration-300" href="#">
+<span class="lang-en">Terms of Service</span>
+<span class="lang-zh hidden">服务条款</span>
+</a>
+<a class="font-manrope text-xs text-gray-500 dark:text-gray-400 text-gray-500 hover:text-blue-600 hover:underline decoration-blue-500 underline-offset-4 transition-opacity duration-300" href="#">
+<span class="lang-en">Website by KODO Solution Enterprise</span>
+<span class="lang-zh hidden">网站开发: KODO Solution Enterprise</span>
+</a>
+</div>
+</div>
+</footer>
+<script>
+    let currentLang = 'en';
+    function toggleLanguage() {
+        currentLang = currentLang === 'en' ? 'zh' : 'en';
+        document.querySelectorAll('.lang-en').forEach(el => {
+            if (currentLang === 'en') {
+                el.classList.remove('hidden');
+            } else {
+                el.classList.add('hidden');
+            }
+        });
+        document.querySelectorAll('.lang-zh').forEach(el => {
+            if (currentLang === 'zh') {
+                el.classList.remove('hidden');
+            } else {
+                el.classList.add('hidden');
+            }
+        });
+    }
+
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+    }
+</script>
+</body></html>
